@@ -475,6 +475,9 @@ Finally, flow analysis merges statements from different segments (such as parts 
 % Mention issues from <https://github.com/Witiko/expltools/issues?q=is%3Aissue%20state%3Aopen%20milestone%3A%22explcheck%20v1.1.0%20(after%20first%20stable%20release)%22>.
 % (Optional) Mention "TODO"s in the code; this may need adding a separate section after Section "Design" that would discuss the implementation details, so that the content of these "TODO"s is intelligible to the reader.
 % Reference [@starynovotny2025warnings, Section "Caveats"].
+% Mention planned structure for enabling future extensions:
+% - Supporting X-type issue identifiers if the current space gets exhausted. For example, W101 would be equivalent to XW01001, allowing for processing step numbers up to 99 and issue numbers up to 999.
+% - Supporting registering new processing steps and specifying a dependency graph between processing steps instead of just having a sequential pipeline.
 \section{Related work}
 \label{sec:related-work}
 % Corresponds to Section 3 of project-proposal.pdf.
