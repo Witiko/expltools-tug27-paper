@@ -427,6 +427,12 @@ Syntactic analysis uses these tokens and groupings to recognize function calls a
 Finally, flow analysis merges statements from different segments (such as parts and replacement texts) into chunks of known statements and organizes these chunks into a flow graph by connecting them with edges.
 % TODO: Be more precise about the representation of edges, which rely not just on chunks but also on statements. This will be helpful for us in Section 8 (Future work), where we'd like to explain the previous work on improving the performance on flow analysis by introducing macro-statements. This will be wholly unintelligible if we provide a simplified explanation here.
 
+\subsection{Inter-file dependencies}
+% See:
+% - https://github.com/Witiko/expltools/issues/129
+% - https://github.com/Witiko/expltools/pull/131
+% Discuss not just file groups but all the downstream effects such as analysis substeps.
+
 % We can't really do justice to all implementation details here.
 % TODO: Refer the interested reader to some of the meatier blog posts:
 % - https://witiko.github.io/Expl3-Linter-9/
