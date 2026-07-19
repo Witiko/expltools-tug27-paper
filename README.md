@@ -1,7 +1,7 @@
 # Expltools: Development tools for expl3 programmers
 
 This repo contains the source code of the article *Expltools: Development tools
-for expl3 programmers*, to appear in _TUGboat_ 47(2).
+for expl3 programmers*, to appear in a future issue of _TUGboat_.
 
 You can typeset the article by running the following commands:
 
