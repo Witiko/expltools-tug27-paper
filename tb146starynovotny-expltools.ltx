@@ -85,6 +85,7 @@ Linters complement human-written tests: while tests verify dynamic behavior at r
 
 % TODO: Clarify (in a footnote?) that, in the following two sections, when we speak about "TeX", we mean low-level TeX code that consists primarily of TeX primitives and potentially also plain TeX macros.
 \subsection{What makes \TeX{} hard to analyze}
+% TODO: Cite "Featherweight TeX and Parser Correctness".
 Unlike languages like Lua, Python, or JavaScript, which come from the tradition of numerical and procedural programming, \TeX{} descends from a different lineage: \emph{macro processors}, where programs are built by defining and expanding text-based substitutions (so-called \emph{macros}). This heritage introduces unique challenges for static analysis.
 
 In macro languages, program structure often isn't visible in the source code\Dash it only emerges after macro expansion. \TeX{} goes even further: it allows the meaning of individual characters to change at runtime, further obfuscating the surface syntax.
@@ -472,6 +473,7 @@ Finally, flow analysis merges statements from different segments (such as parts 
 \subsubsection{Prevalence of expl3 in \TeX{} code}
 % Corresponds to Section 4.2 of starynovotny-expltools-slides.pdf.
 % TODO: Since this has already been "published" in starynovotny-expltools-slides.pdf and https://witiko.github.io/Expl3-Linter-5/, perhaps we can just mention the result as a motivation for caring about expl3 in the last paragraph of Section 1.4 (How expl3 tames the chaos).
+% This is now computed as part of CI's step "Print code coverage".
 \subsubsection{Code coverage}
 \label{sec:code-coverage}
 \subsubsection{Most common issues}
@@ -491,7 +493,8 @@ Finally, flow analysis merges statements from different segments (such as parts 
 % Annotation support: https://github.com/Witiko/expltools/issues/206#issuecomment-4325554243 and below
 \section{Related work}
 \label{sec:related-work}
-% Corresponds to Section 3 of project-proposal.pdf.
+% Corresponds to Section 3 of project-proposal.pdf and https://witiko.github.io/Expl3-Linter-3/.
+% More recently treated by Vratislav Vojtek in https://www.overleaf.com/project/6ace86ae1aecda6740e67dd6.
 % Mention <https://github.com/Hannah-Sten/TeXiFy-IDEA>, as discussed with Erik Nijenhuis at TUG 2025.
 % Mention the LaTeX grammar from Mathias Jakobsen's article that covers their TUG 2025 talk titled "Best-effort TeX parsing for interactive editing".
 % Mention Ruckert's TeX profiler discussed in the following TUGboat articles as an example of dynamic analysis of TeX programs:
