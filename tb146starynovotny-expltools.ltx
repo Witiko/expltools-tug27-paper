@@ -374,6 +374,7 @@ Figure~\ref{fig:package-diagram} illustrates how explcheck's implementation is o
 \item \texttt{issues}: Maintains a registry of all issues detected during analysis.
 \item \texttt{cli}: Implements the command-line interface.
 \item \texttt{misc}: Supplies low-level data types and helper functions used by other packages.
+% TODO: Add `explcheck-expandability.lua` to `misc`.
 \end{itemize}
 
 Since the hierarchical \TeX{} directory structure is generally hidden from users, who load macro packages, fonts, and Lua modules by name, all Lua modules for explcheck reside in a single directory.
